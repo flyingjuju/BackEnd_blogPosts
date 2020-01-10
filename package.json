@@ -1,0 +1,28 @@
+{
+  "name": "backendapplication",
+  "version": "1.0.0",
+  "description": "use javascript and express to fetch and modify data with api calls at https://hatchways.io/api/assessment/blog/posts",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --watch --coverage test/index.test.js",
+    "start": "nodemon ./server/index.js"
+  },
+  "jest": {
+    "testPathIgnorePatterns": [
+      "<rootDir>/node_modules/"
+    ]
+  },
+  "keywords": [],
+  "author": "Yi Sun",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "nodemon": "^1.19.4",
+    "request": "^2.88.0"
+  },
+  "devDependencies": {
+    "jest": "^24.9.0",
+    "supertest": "^4.0.2"
+  }
+}
